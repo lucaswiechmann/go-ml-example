@@ -1,11 +1,12 @@
 package main
 
 import (
-	"go-ml-example/cmd/plot"
+	"go-ml-example/cmd/classification"
 )
 
 func main() {
 	// stats.CalculateStats()
 	// regression.Regression()
-	plot.PlotLR()
+	// plot.PlotLR()
+	classification.ClassifyByKNNMethod()
 }
