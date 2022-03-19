@@ -8,5 +8,6 @@ func main() {
 	// stats.CalculateStats()
 	// regression.Regression()
 	// plot.PlotLR()
-	classification.ClassifyByKNNMethod()
+	// classification.ClassifyByKNNMethod()
+	classification.Kmeans()
 }

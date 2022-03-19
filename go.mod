@@ -3,6 +3,7 @@ module go-ml-example
 go 1.17
 
 require (
+	github.com/mash/gokmeans v0.0.0-20170215130432-ea22cff45f59
 	github.com/sjwhitworth/golearn v0.0.0-20211014193759-a8b69c276cd8
 	gonum.org/v1/gonum v0.9.3
 	gonum.org/v1/plot v0.9.0
