@@ -3,6 +3,7 @@ module go-ml-example
 go 1.17
 
 require (
+	github.com/lytics/anomalyzer v0.0.0-20151102000650-13cee1061701
 	github.com/mash/gokmeans v0.0.0-20170215130432-ea22cff45f59
 	github.com/sjwhitworth/golearn v0.0.0-20211014193759-a8b69c276cd8
 	gonum.org/v1/gonum v0.9.3
@@ -11,6 +12,8 @@ require (
 
 require (
 	github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af // indirect
+	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
+	github.com/drewlanenga/govector v0.0.0-20160727150047-f69e9f02317e // indirect
 	github.com/fogleman/gg v1.3.0 // indirect
 	github.com/go-fonts/liberation v0.1.1 // indirect
 	github.com/go-latex/latex v0.0.0-20210118124228-b3d85cf34e07 // indirect
