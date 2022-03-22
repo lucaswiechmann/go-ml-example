@@ -3,6 +3,7 @@ module go-ml-example
 go 1.17
 
 require (
+	github.com/goml/gobrain v0.0.0-20201212123421-2e2d98ca8249
 	github.com/lytics/anomalyzer v0.0.0-20151102000650-13cee1061701
 	github.com/mash/gokmeans v0.0.0-20170215130432-ea22cff45f59
 	github.com/sjwhitworth/golearn v0.0.0-20211014193759-a8b69c276cd8
