@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-ml-example/cmd/classification"
+	"go-ml-example/cmd/anomaly_detection"
 )
 
 func main() {
@@ -9,5 +9,6 @@ func main() {
 	// regression.Regression()
 	// plot.PlotLR()
 	// classification.ClassifyByKNNMethod()
-	classification.Kmeans()
+	// classification.Kmeans()
+	anomaly_detection.DetectAnomaly()
 }
