@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-ml-example/cmd/neural_networks"
+	"go-ml-example/cmd/outlier_analysis"
 )
 
 func main() {
@@ -11,5 +11,6 @@ func main() {
 	// classification.ClassifyByKNNMethod()
 	// classification.Kmeans()
 	// anomaly_detection.DetectAnomaly()
-	neural_networks.TrainNeural()
+	// neural_networks.TrainNeural()
+	outlier_analysis.CalcOutlier()
 }
