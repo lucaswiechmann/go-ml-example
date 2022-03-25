@@ -7,12 +7,14 @@ import (
 
 	tf "github.com/tensorflow/tensorflow/tensorflow/go"
 	"github.com/tensorflow/tensorflow/tensorflow/go/op"
+	// tf "github.com/galeone/tensorflow/tensorflow/go"
+	// "github.com/galeone/tensorflow/tensorflow/go/op"
 )
 
 func Add(sum_arg1, sum_arg2 int8) (interface{}, error) {
 	sum_scope := op.NewScope()
-	input1 := op.Placeholder(sum_scope.Subscope("a1"), tf.Int8)
-	input2 := op.Placeholder(sum_scope.Subscope("a2"), tf.Int8)
+	input1 := op.Placeholder(sum_scope.SubScope("a1"), tf.DataType(tf.Int8))
+	input2 := op.Placeholder(sum_scope.SubScope("a2"), tf.DataType(tf.Int8))
 	sum_result_node := op.Add(sum_scope, input1, input2)
 
 	graph, err := sum_scope.Finalize()
@@ -61,8 +63,8 @@ func Add(sum_arg1, sum_arg2 int8) (interface{}, error) {
 func Multiply(sum_arg1, sum_arg2 int8) (interface{}, error) {
 
 	sum_scope := op.NewScope()
-	input1 := op.Placeholder(sum_scope.Subscope("x1"), tf.Int8)
-	input2 := op.Placeholder(sum_scope.Subscope("x2"), tf.Int8)
+	input1 := op.Placeholder(sum_scope.SubScope("x1"), tf.DataType(tf.Int8))
+	input2 := op.Placeholder(sum_scope.SubScope("x2"), tf.DataType(tf.Int8))
 
 	sum_result_node := op.Mul(sum_scope, input1, input2)
 	graph, err := sum_scope.Finalize()
