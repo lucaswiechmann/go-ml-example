@@ -22,12 +22,12 @@ If you have trouble installing tensorflow package:
 
 To build projet, run:
 ```
-go build
+make build
 ```
 
 ### Test it
 
 To check machine learning methods, select one option running makefile commands:
 ```
-make test
+make help
 ```
