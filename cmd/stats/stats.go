@@ -58,7 +58,7 @@ func CalculateStats() {
 
 	data := make([]float64, 0)
 
-	file := flag.Args()[0]
+	file := flag.Args()[1]
 	f, err := os.Open(file)
 	if err != nil {
 		fmt.Println(err)

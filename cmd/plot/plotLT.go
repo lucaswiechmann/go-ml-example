@@ -35,7 +35,7 @@ func PlotLR() {
 		return
 	}
 
-	filename := flag.Args()[0]
+	filename := flag.Args()[1]
 	file, err := os.Open(filename)
 	if err != nil {
 		fmt.Println(err)
@@ -45,13 +45,13 @@ func PlotLR() {
 
 	r := csv.NewReader(file)
 
-	a, err := strconv.ParseFloat(flag.Args()[1], 64)
+	a, err := strconv.ParseFloat(flag.Args()[2], 64)
 	if err != nil {
 		fmt.Println(a, "not a valid float")
 		return
 	}
 
-	b, err := strconv.ParseFloat(flag.Args()[2], 64)
+	b, err := strconv.ParseFloat(flag.Args()[3], 64)
 	if err != nil {
 		fmt.Println(b, "not a valid float")
 		return

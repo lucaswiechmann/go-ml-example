@@ -12,12 +12,12 @@ import (
 
 func DetectAnomaly() {
 	flag.Parse()
-	if len(flag.Args()) == 0 {
+	if len(flag.Args()) == 1 {
 		fmt.Println("usage: anomaly MAX")
 		return
 	}
 
-	MAX, err := strconv.Atoi(flag.Args()[0])
+	MAX, err := strconv.Atoi(flag.Args()[1])
 	if err != nil {
 		fmt.Println("MAX needs to be an integer")
 		return

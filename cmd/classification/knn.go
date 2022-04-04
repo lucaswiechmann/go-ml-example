@@ -17,14 +17,14 @@ func ClassifyByKNNMethod() {
 		return
 	}
 
-	dataset := flag.Args()[0]
+	dataset := flag.Args()[1]
 	rawData, err := base.ParseCSVToInstances(dataset, false)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	k, err := strconv.Atoi(flag.Args()[1])
+	k, err := strconv.Atoi(flag.Args()[2])
 	if err != nil {
 		fmt.Println(err)
 		return

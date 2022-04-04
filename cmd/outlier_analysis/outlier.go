@@ -49,12 +49,12 @@ func outliers(x []float64, limit float64) []float64 {
 
 func CalcOutlier() {
 	flag.Parse()
-	if len(flag.Args()) != 2 {
+	if len(flag.Args()) != 3 {
 		fmt.Println("usage: CalcOutlier limit")
 		return
 	}
 
-	filename := flag.Args()[0]
+	filename := flag.Args()[1]
 	file, err := os.Open(filename)
 	if err != nil {
 		fmt.Println(err)
@@ -62,7 +62,7 @@ func CalcOutlier() {
 	}
 	defer file.Close()
 
-	limit, err := strconv.ParseFloat(flag.Args()[1], 64)
+	limit, err := strconv.ParseFloat(flag.Args()[2], 64)
 	if err != nil {
 		fmt.Println(err)
 		return

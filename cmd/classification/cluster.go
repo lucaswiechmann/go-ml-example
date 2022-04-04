@@ -22,12 +22,12 @@ var observations []gokmeans.Node = []gokmeans.Node{
 
 func Kmeans() {
 	flag.Parse()
-	if len(flag.Args()) == 0 {
+	if len(flag.Args()) == 1 {
 		fmt.Println("usage: kmeans k")
 		return
 	}
 
-	k, err := strconv.Atoi(flag.Args()[0])
+	k, err := strconv.Atoi(flag.Args()[1])
 	if err != nil {
 		fmt.Println(err)
 		return

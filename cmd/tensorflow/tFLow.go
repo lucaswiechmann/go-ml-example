@@ -110,19 +110,19 @@ func Multiply(sum_arg1, sum_arg2 int8) (interface{}, error) {
 }
 
 func RunTensorFlow() {
-	if len(os.Args) != 3 {
+	if len(os.Args) != 4 {
 		fmt.Println("Need two integers parameters")
 		return
 	}
 
-	t1, err := strconv.Atoi(os.Args[1])
+	t1, err := strconv.Atoi(os.Args[2])
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	n1 := int8(t1)
 
-	t2, err := strconv.Atoi(os.Args[2])
+	t2, err := strconv.Atoi(os.Args[3])
 	if err != nil {
 		fmt.Println(err)
 		return

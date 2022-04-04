@@ -22,7 +22,7 @@ func Regression() {
 		return
 	}
 
-	filename := flag.Args()[0]
+	filename := flag.Args()[1]
 	file, err := os.Open(filename)
 	if err != nil {
 		fmt.Println(err)
